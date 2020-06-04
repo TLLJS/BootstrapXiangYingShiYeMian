@@ -1,0 +1,287 @@
+/* 由于设计稿的宽度是1280px而container的最大宽度是1170px所以手动将最大宽度改为1280px */
+
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+i {
+    font-style: normal;
+}
+
+.col-md-2 {
+    padding-left: 0!important;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none!important;
+}
+
+
+/* .botton li:hover {
+    background-color: #ffffff;
+} */
+
+header {
+    padding-left: 0!important;
+}
+
+.logo {
+    background-color: #429ad9;
+}
+
+.logo img {
+    display: block;
+    /* width: 100%; */
+    /* logo图片不需要缩放 */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* 1.我们如果进入了超小屏幕下  logo里面的图片就隐藏起来 */
+
+
+/* 2. 我们事先准备好一个盒子 在logo里面，它平时是隐藏起来的，只有在超小屏幕下显示 */
+
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+
+/* 当我们进入 小屏幕 还有 超小屏幕的时候 我们 nav 里面的li 浮动起来 并且宽度为 20%  */
+
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    .asw {
+        margin-top: 10px;
+    }
+    .weq {
+        width: 75%;
+        float: left;
+    }
+    .qw {
+        width: 25%;
+        float: right;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    background-color: #429ad9;
+}
+
+.logo .xsa a {
+    display: block;
+    width: 100%;
+    background-color: #429ad9;
+    padding: 10px 0 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo img {
+    /* width: 100%; */
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.col-md-7 ul li:nth-child(1) {
+    cursor: pointer;
+    width: 50%;
+    height: 266px;
+}
+
+.col-md-7 ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .col-md-7 ul li:nth-child(1) p {
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+} */
+
+.col-md-7 ul li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.col-md-7 ul li p,
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.carousel-caption {
+    line-height: 41px;
+    font-size: 16px;
+    padding: 0!important;
+}
+
+.col-md-7 li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.col-md-3 .as {
+    display: block;
+    width: 100%;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 266px!important;
+}
+
+.carousel-indicators li {
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.col-md-3 img {
+    width: 100%;
+}
+
+.col-md-3 a:last-child {
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+}
+
+.resou {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.col-md-3 p {
+    color: #337ab7;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.col-md-3 a:last-child span:last-child {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.rows {
+    border-top: 1px solid#ccc;
+    margin-bottom: 10px;
+}
+
+.col-md-9 h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.col-md-9 p {
+    margin: 0 0 10px;
+    color: #777;
+}
+
+.col-md-9 span {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.row .qw a {
+    display: block;
+    border: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.row .qw a img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .asw li a {
+        font-size: 14px;
+        padding-left: 3px;
+    }
+    /* 当我们处于超小屏幕 news 第一个li 宽度为 100%  剩下的小li  各 50% */
+    .asw li:nth-child(1) {
+        width: 100%!important;
+    }
+    .asw li {
+        width: 50%!important;
+    }
+    h3 {
+        font-size: 14px;
+    }
+}
